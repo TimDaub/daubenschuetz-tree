@@ -14,7 +14,7 @@ Install the rendering suite using:
 
 ```bash
 $ git clone git@github.com:TimDaub/daubenschuetz-tree.git
-$ cd SSRP
+$ cd daubenschuetz-tree
 $ npm i
 ```
 

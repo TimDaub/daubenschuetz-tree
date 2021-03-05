@@ -53,3 +53,5 @@ To insert a new leave $l_x$ in a non-empty tree $t$:
 ## Conclusion
 
 We introduced daubenschütz trees, a context-aware merkle tree.
+
+© 2021 Tim Daubenschütz

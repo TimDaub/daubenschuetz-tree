@@ -1,0 +1,41 @@
+{
+  "name": "daubenschuetz-tree",
+  "version": "0.0.1",
+  "description": "A daubenschütz tree is a content-aware merkle tree.",
+  "main": "./scripts/render.mjs",
+  "scripts": {
+    "md:render": "node ./scripts/render.mjs",
+    "git:add": "git update-index --add ./index.html",
+    "dev": "concurrently \"npm-watch\" \"ssl-serve .\""
+  },
+  "watch": {
+    "md:render": "SOURCE.md"
+  },
+  "pre-commit": "md:render, git:add",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TimDaub/ssrp.git"
+  },
+  "keywords": [
+    "merkle tree",
+    "content-aware",
+    "content-addressing",
+    "authentication",
+    "hashing",
+    "hash",
+    "specification",
+    "data"
+  ],
+  "author": "Tim Daubenschütz <tim@daubenschuetz.de> (https://timdaub.github.io/)",
+  "bugs": {
+    "url": "https://github.com/TimDaub/ssrp/issues"
+  },
+  "devDependencies": {
+    "@iktakahiro/markdown-it-katex": "4.0.1",
+    "concurrently": "6.0.0",
+    "markdown-it": "12.0.4",
+    "npm-watch": "0.7.0",
+    "pre-commit": "1.2.2",
+    "ssl-serve": "6.5.8"
+  }
+}
